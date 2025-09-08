@@ -1,247 +1,135 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edmílson Pontes - Autor Oficial</title>
-    <!-- Inclui o Tailwind CSS via CDN para estilização -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Ícones Font Awesome para redes sociais -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f7f7f7;
-        }
-        .section {
-            @apply py-16 px-4 sm:px-6 lg:px-8;
-        }
-        .container {
-            @apply max-w-7xl mx-auto;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edmilson Pontes - Autor</title>
+  <style>
+    body {font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; color:#333;}
+    header {background:#064e3b; color:#fff; padding:20px; text-align:center;} /* verde escuro */
+    header img {width:120px; height:120px; border-radius:50%; border:3px solid #fff; object-fit:cover;}
+    header h1 {margin:10px 0 0; font-size:24px;}
+    main {max-width:900px; margin:20px auto; padding:0 20px;}
+    section {background:#fff; padding:20px; margin-bottom:20px; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.05);}
+    h2 {margin-top:0; color:#065f46;} /* verde médio */
+    .images-row {display:flex; gap:12px; flex-wrap:wrap; margin:15px 0;}
+    .images-row img {flex:1 1 240px; min-width:180px; max-height:360px; object-fit:cover; border-radius:8px;}
+    .links {margin-top:10px;}
+    .links a {display:inline-block; margin-right:10px; padding:8px 14px; background:#065f46; color:#fff; text-decoration:none; border-radius:6px; font-size:14px;} /* botões verdes */
+    footer {background:#064e3b; color:#d1fae5; text-align:center; padding:15px; font-size:14px;} /* rodapé verde */
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body>
+  <header>
+    <img src="https://i.postimg.cc/k2RHcT2p/perfil.jpg" alt="Foto de perfil do autor">
+    <h1>Edmilson Pontes — Autor</h1>
+  </header>
 
-    <!-- Seção de Navegação -->
-    <nav class="bg-gray-900 text-white p-4 sticky top-0 z-50 shadow-lg">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="#" class="text-xl font-bold tracking-tight">Edmílson Pontes</a>
-            <div class="hidden md:flex space-x-6">
-                <a href="#sobre" class="hover:text-blue-400 transition-colors duration-200">Sobre</a>
-                <a href="#livros" class="hover:text-blue-400 transition-colors duration-200">Livros</a>
-                <a href="#contato" class="hover:text-blue-400 transition-colors duration-200">Contato</a>
-            </div>
-        </div>
-    </nav>
+  <main>
 
-    <!-- Seção de Cabeçalho -->
-    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg">
-        <div class="container mx-auto px-4 py-16 text-center">
-            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">Bem-vindos à minha página oficial de autor</h1>
-            <p class="mt-4 text-xl sm:text-2xl font-light opacity-90">Meu nome é Edmílson Pontes, sou escritor dedicado a escrever histórias comoventes e vibrantes, todas publicadas no site da Amazon no Brasil. São 7 livros e o 8º em breve chegará.</p>
-        </div>
-    </header>
-
-    <!-- Seção Sobre o Autor -->
-    <section id="sobre" class="section bg-white shadow-inner">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8">Sobre o Autor</h2>
-            <div class="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-12">
-                <div class="md:w-1/3">
-                    
-                    <img src="https://placehold.co/400x400/2a3e5c/ffffff?text=Edmilson+Pontes" alt="Foto de Edmilson Pontes" class="rounded-full shadow-xl w-64 h-64 mx-auto md:mx-0 object-cover border-4 border-white">
-                </div>
-                <div class="md:w-2/3 text-center md:text-left">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Ficção Científica, Romance, Aventura</h3>
-                    <p class="text-lg text-gray-600 leading-relaxed mb-8">
-                        Aqui você encontrará ficção científica, romance, aventura e muito romance. Peço humildemente que pontuem meus livros na plataforma, que aluguem ou comprem todos os livros que funcionam no modo digital para serem lidos no sistema Kindle, e custam a partir de três reais. Estou à disposição dos leitores para contato na minha página oficial do Instagram.
-                    </p>
-                    <div class="flex justify-center md:justify-start space-x-6">
-                        <div class="text-center">
-                            <i class="fas fa-book-open text-3xl text-blue-600 mb-2"></i>
-                            <p class="font-bold">7 Livros Publicados</p>
-                        </div>
-                        <div class="text-center">
-                            <i class="fas fa-dollar-sign text-3xl text-blue-600 mb-2"></i>
-                            <p class="font-bold">A partir de R$ 3</p>
-                        </div>
-                        <div class="text-center">
-                            <i class="fas fa-mobile-alt text-3xl text-blue-600 mb-2"></i>
-                            <p class="font-bold">Formato Digital Kindle</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- SOBRE O AUTOR -->
+    <section>
+      <h2>Sobre o Autor</h2>
+      <p>Sou <strong>Edmilson Pontes</strong>, escritor apaixonado por criar histórias que unem aventura, emoção e reflexão. Ao longo de mais de uma década de carreira, publiquei a aclamada trilogia <strong>“Herdeiros do Infinito”</strong> e outros títulos que exploram diferentes gêneros — da ficção científica ao romance, passando pelo mistério, ação e até o erotismo.</p>
+      <p>Em cada obra, busco transportar o leitor para mundos fantásticos, despertando sentimentos intensos e convidando à reflexão sobre a vida e suas escolhas.</p>
+      <p>Se você procura livros que envolvem, inspiram e surpreendem, convido você a embarcar comigo nessa jornada literária inesquecível.</p>
     </section>
 
-    <!-- Seção de Livros -->
-    <section id="livros" class="section bg-gray-50">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">Meus Livros</h2>
-            <p class="text-lg text-gray-600 mb-8">Uma coleção de histórias que exploram os limites da imaginação.</p>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <!-- Card: Assédio Vermelho -->
-                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
-                    <div class="flex flex-wrap justify-center space-x-2 space-y-2 mb-4">
-                        
-                        <img src="https://placehold.co/300x450/4a5568/ffffff?text=Capa" alt="Capa do livro Assédio Vermelho" class="rounded-lg shadow-lg w-36 h-54 object-cover">
-                        
-
-[Image of an internal illustration]
-
-                        <img src="https://placehold.co/300x450/4a5568/ffffff?text=Ilustração" alt="Ilustração de Assédio Vermelho" class="rounded-lg shadow-lg w-36 h-54 object-cover">
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Assédio Vermelho</h3>
-                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">
-                        Isso é mais que atração fatal, isso é mais que instinto selvagem, isso é Assédio vermelho. Em um futuro próximo, a sociedade presencia o surgimento da Meta-Girl, uma comunidade social exclusivamente feminina onde influenciadoras digitais dedicam-se a auxiliar mulheres em seus desafios e dilemas. Nessa plataforma, quanto maior a popularidade das influenciadoras, mais poder e riqueza elas acumulam. Entre as figuras de destaque está Jaqueline Olivares, uma influenciadora e líder feminista que combate o assédio sexual, alcançando grande notoriedade na Meta-Girl. Ambiciosa e determinada a se tornar a número um, Jaqueline planeja conceder poder absoluto às mulheres e submeter os homens à dominação feminina. Para atingir seus objetivos, ela desenvolve duas fórmulas inovadoras: uma que amplifica a força e o prazer sexual das mulheres, tornando-as superiores a qualquer homem; e outra que condiciona mentalmente os homens, tornando-os pacíficos e obedientes. Durante uma celebração em sua mansão, Jaqueline conhece Carlos, um jovem de beleza marcante, que ela decide utilizar para satisfazer seus desejos e consolidar seu poder. No entanto, Carlos se vê envolvido em uma trama de desejo, manipulação e ambição, lutando para escapar ou persuadir Jaqueline a abandonar seus planos em favor de um amor verdadeiro. "Assédio Vermelho" é uma narrativa envolvente que explora os limites da ambição, as complexidades das relações de gênero e os dilemas éticos em uma sociedade futurista dominada pela busca incessante por poder. Por Edmílson Pontes
-                    </p>
-                    <a href="https://a.co/d/0iDYphp" target="_blank" class="inline-block bg-blue-600 text-white py-2 px-6 rounded-full font-semibold hover:bg-blue-700 transition-colors duration-300">Comprar na Amazon</a>
-                </div>
-
-                <!-- Card: Herdeiros do Infinito -->
-                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
-                    <div class="flex flex-wrap justify-center space-x-2 space-y-2 mb-4">
-                        
-                        <img src="https://placehold.co/300x450/4a5568/ffffff?text=Capa" alt="Capa do livro Herdeiros do Infinito" class="rounded-lg shadow-lg w-36 h-54 object-cover">
-                        
-
-[Image of an internal illustration]
-
-                        <img src="https://placehold.co/300x450/4a5568/ffffff?text=Ilustração" alt="Ilustração de Herdeiros do Infinito" class="rounded-lg shadow-lg w-36 h-54 object-cover">
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Herdeiros do Infinito</h3>
-                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">
-                        Uma jornada rumo a Negravidom, um campo de energia enigmático. Apresentação: Herdeiros do infinito se trata de uma obra de ficção científica, terror e mistério, nesse livro o autor Edmilson Pontes nos presenteia com um enredo surpreendente que nos leva a reflexões sobre a vida no universo, o medo do desconhecido e a incessante busca pela verdade. nesta jornada rumo a Negravidom um campo de energia enigmático. A trama central da história: "Os últimos sobreviventes de uma guerra nuclear que devastou o planeta Pronun, estão alojados numa estação subterrânea, a onde o suprimento de ar está preste a acabar, resta porém uma última esperança que é enviar o capitão Cromus e um grupo de apoio para um campo de energia chamado de Negravidom a onde poderá encontrar um portal para outros mundos e assim conhecer o criador do universo" A história nos leva a uma jornada em busca da verdade, Cromus e seus companheiros têm que enfrentar diversos desafios aterrorizantes para desvendar os mistérios de Negravidom e assim conhecer o criador do universo; A luta pela sobrevivência é o conflito principal da história, pois os personagens estão em busca de salvação da humanidade, além disso o medo do desconhecido torna tudo mais empolgante e extremamente desafiador nesta nova edição melhorada da obra.
-                    </p>
-                    <a href="https://a.co/d/cs77PWI" target="_blank" class="inline-block bg-blue-600 text-white py-2 px-6 rounded-full font-semibold hover:bg-blue-700 transition-colors duration-300">Comprar na Amazon</a>
-                </div>
-
-                <!-- Card: Herdeiros do Infinito 2 - O Legado -->
-                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
-                    <div class="flex flex-wrap justify-center space-x-2 space-y-2 mb-4">
-                        
-                        <img src="https://placehold.co/300x450/4a5568/ffffff?text=Capa" alt="Capa do livro Herdeiros do Infinito 2" class="rounded-lg shadow-lg w-36 h-54 object-cover">
-                        
-
-[Image of an internal illustration]
-
-                        <img src="https://placehold.co/300x450/4a5568/ffffff?text=Ilustração" alt="Ilustração de Herdeiros do Infinito 2" class="rounded-lg shadow-lg w-36 h-54 object-cover">
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Herdeiros do Infinito 2 - O Legado</h3>
-                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">
-                        O legado continua. Viva, filha do capitão Cromus e da engenharia genética Rosa, embarca em uma jornada épica para decifrar os enigmas de Vaniro Solón e salvar seus pais. Com seus irmãos adotivos, ela desbrava linhas temporais usando o poder de Negravidom, mas cada salto no tempo revela novos perigos e distorções da realidade. A cada passo, a teia de mistérios se intensifica, e Viva precisa enfrentar dilemas cruciais que podem alterar o destino de dois mundos. Prepare-se para uma aventura onde o tempo é um labirinto e cada decisão ecoa através da eternidade.
-                    </p>
-                    <a href="https://a.co/d/eJQiJ92" target="_blank" class="inline-block bg-blue-600 text-white py-2 px-6 rounded-full font-semibold hover:bg-blue-700 transition-colors duration-300">Comprar na Amazon</a>
-                </div>
-                
-                <!-- Card: A Emoção Escura -->
-                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
-                    <div class="flex flex-wrap justify-center space-x-2 space-y-2 mb-4">
-                        
-                        <img src="https://placehold.co/300x450/4a5568/ffffff?text=Capa" alt="Capa do livro A Emoção Escura" class="rounded-lg shadow-lg w-36 h-54 object-cover">
-                        
-
-[Image of an internal illustration]
-
-                        <img src="https://placehold.co/300x450/4a5568/ffffff?text=Ilustração" alt="Ilustração de A Emoção Escura" class="rounded-lg shadow-lg w-36 h-54 object-cover">
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">A Emoção Escura</h3>
-                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">
-                        "Num Brasil futurista, onde os ecos do passado ressoam no presente, Gilvano, um solitário assombrado por traumas, encontra em Marla um possível amor que desafia seus medos. Mas ela guarda um segredo obscuro, um reflexo de suas próprias feridas. Ao mesmo tempo, ele se torna cobaia de uma revolucionária máquina de regressão mental, capaz de desenterrar os fantasmas mais profundos. Entre a paixão extrema e os labirintos da memória, Gilvano precisará enfrentar seus demônios para descobrir a verdade: o passado pode ser a chave para o futuro, ou a porta para a destruição. Prepare-se para uma jornada onde a emoção e a ficção científica se encontram, e onde o coração e a mente travam uma batalha épica." Por Edmilson P
-                    </p>
-                    <a href="https://a.co/d/9ZKyrwP" target="_blank" class="inline-block bg-blue-600 text-white py-2 px-6 rounded-full font-semibold hover:bg-blue-700 transition-colors duration-300">Comprar na Amazon</a>
-                </div>
-
-                <!-- Card: Herdeiros do Infinito 3 - O Recomeço -->
-                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
-                    <div class="flex flex-wrap justify-center space-x-2 space-y-2 mb-4">
-                        
-                        <img src="https://placehold.co/300x450/4a5568/ffffff?text=Capa" alt="Capa do livro Herdeiros do Infinito 3" class="rounded-lg shadow-lg w-36 h-54 object-cover">
-                        
-
-[Image of an internal illustration]
-
-                        <img src="https://placehold.co/300x450/4a5568/ffffff?text=Ilustração" alt="Ilustração de Herdeiros do Infinito 3" class="rounded-lg shadow-lg w-36 h-54 object-cover">
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Herdeiros do Infinito 3 - O Recomeço</h3>
-                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">
-                        É o recomeço, o passado é o futuro, estão a ponto de colidir e uma terrível força do mal está preste a surgir. "A trilogia será fechada com chave de ouro, uma verdadeira epopeia da história humana, ascendendo todos os pontos misteriosos que cerca a humanidade e sua origem na terra, os fenômenos da vida e da mente contada de forma surpreendente e impactante, algo novo e diferente bem grandioso e jamais visto numa obra do gênero, elevando sua imaginação além dos limites do tempo e do espaço." Um jovem aparece do nada na Ultima ilha de Poseidônis do continente perdido de Atlântida, desesperado sem memória ele sente a força de um terrível mal que está preste a atacar, com estranhos poderes ele pede ajuda aos habitantes da ilha e se depara com vários enigmas sobre sua origem e as lembranças vagas do seu passado e ensina os atlantes os mistérios do fluido cósmico e a manipulação dos poderes psíquicos. Capaz de viajar pelo tempo e espaço, ele buscará aniquilar o poder do mal que pode tomar a forma de vários seres mitológicos da história humana e ele terá que buscar a esfera suprema pelo tempo antes que caia nas mãos desse terrível inimigo. Viva a maior aventura, seja no passado ou futuro muito distante, ou em bilhões de anos-luz pelas estrelas. Por Edmilson Pontes
-                    </p>
-                    <a href="https://a.co/d/hp30ViR" target="_blank" class="inline-block bg-blue-600 text-white py-2 px-6 rounded-full font-semibold hover:bg-blue-700 transition-colors duration-300">Comprar na Amazon</a>
-                </div>
-
-                <!-- Card: Sonho de Namorar é Jogo Mortal -->
-                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
-                    <div class="flex flex-wrap justify-center space-x-2 space-y-2 mb-4">
-                        
-                        <img src="https://placehold.co/300x450/4a5568/ffffff?text=Capa" alt="Capa do livro Sonho de namorar é jogo mortal" class="rounded-lg shadow-lg w-36 h-54 object-cover">
-                        
-
-[Image of an internal illustration]
-
-                        <img src="https://placehold.co/300x450/4a5568/ffffff?text=Ilustração" alt="Ilustração de Sonho de namorar é jogo mortal" class="rounded-lg shadow-lg w-36 h-54 object-cover">
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Sonho de Namorar é Jogo Mortal</h3>
-                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">
-                        "No sistema estelar de Antares 16, a liberdade tem um preço mortal. Subjugados e separados, os jovens do povo do norte são forçados a competir em corridas perigosas em um planeta deserto, governado com mãos de ferro pelo cruel povo do sul. Bel e Glória arriscam tudo, enfrentando criaturas ferozes e desafios inimagináveis, em busca da liberdade e do amor. Mas, no verão, quando os perigos se intensificam, a linha entre a esperança e a morte se torna tênue. Em um espetáculo mórbido para seus opressores, eles precisam vencer, não apenas para sobreviver, mas para recuperar sua humanidade. Sonho de namorar é jogo mortal, uma história de opressão, resiliência e a busca por um futuro onde o amor e a liberdade se encontram." Por Edmilson Pontes
-                    </p>
-                    <a href="https://a.co/d/blfK6rU" target="_blank" class="inline-block bg-blue-600 text-white py-2 px-6 rounded-full font-semibold hover:bg-blue-700 transition-colors duration-300">Comprar na Amazon</a>
-                </div>
-
-                <!-- Card: Projeto Raça Pura -->
-                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
-                    <div class="flex flex-wrap justify-center space-x-2 space-y-2 mb-4">
-                        
-                        <img src="https://placehold.co/300x450/4a5568/ffffff?text=Capa" alt="Capa do livro Projeto Raça Pura" class="rounded-lg shadow-lg w-36 h-54 object-cover">
-                        
-
-[Image of an internal illustration]
-
-                        <img src="https://placehold.co/300x450/4a5568/ffffff?text=Ilustração" alt="Ilustração de Projeto Raça Pura" class="rounded-lg shadow-lg w-36 h-54 object-cover">
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Projeto Raça Pura</h3>
-                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">
-                        2177. A utopia de uma raça humana perfeita esconde um pesadelo: controle totalitário. Através de engenharia genética, a humanidade foi transformada, perdendo sua individualidade e tornando-se presa de uma força oculta. Mas uma pequena resistência surge, disposta a tudo para desmascarar a conspiração. Em uma jornada perigosa, eles desvendam segredos sombrios e encontram uma possível salvação nos confins do universo. Enfrentando dilemas morais e perigos extremos, esses rebeldes lutam pela liberdade da humanidade. Até onde eles irão para recuperar sua essência?" Por Edmilson Pontes
-                    </p>
-                    <a href="https://a.co/d/8aobwhT" target="_blank" class="inline-block bg-blue-600 text-white py-2 px-6 rounded-full font-semibold hover:bg-blue-700 transition-colors duration-300">Comprar na Amazon</a>
-                </div>
-
-            </div>
-        </div>
+    <!-- ASSÉDIO VERMELHO -->
+    <section>
+      <h2>Assédio Vermelho</h2>
+      <div class="images-row">
+        <img src="https://i.postimg.cc/mzyJ9hPZ/assedio-vermelho-capa.png" alt="Capa Assédio Vermelho">
+        <img src="https://i.postimg.cc/47gjnpNF/assedio-vermelho-segunda-capa.png" alt="Segunda capa Assédio Vermelho">
+      </div>
+      <p>Em um futuro próximo, a sociedade presencia o surgimento da Meta-Girl, uma comunidade social exclusivamente feminina onde influenciadoras digitais dedicam-se a auxiliar mulheres em seus desafios e dilemas. Entre as figuras de destaque está Jaqueline Olivares, que alcança grande notoriedade na Meta-Girl. Ambiciosa e determinada, Jaqueline planeja conceder poder absoluto às mulheres e submeter os homens à dominação feminina. Durante uma celebração em sua mansão, ela conhece Carlos, um jovem que se vê envolvido em uma trama de desejo, manipulação e ambição, lutando para escapar ou persuadir Jaqueline a abandonar seus planos em favor de um amor verdadeiro.</p>
+      <div class="links">
+        <a href="https://a.co/d/1EpdMYT">Comprar na Amazon</a>
+      </div>
     </section>
 
-    <!-- Seção de Contato -->
-    <section id="contato" class="section bg-white shadow-inner">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">Contato</h2>
-            <p class="text-lg text-gray-600 mb-8">Conecte-se comigo nas redes sociais.</p>
-            <div class="flex justify-center space-x-6 mb-4">
-                <a href="https://www.instagram.com/edmilsonpontesneves/reels/" target="_blank" class="text-gray-500 hover:text-pink-600 transition-colors duration-300 text-3xl"><i class="fab fa-instagram"></i></a>
-            </div>
-            <p class="text-gray-500 text-sm">Estou à disposição dos leitores para contato na minha página oficial do Instagram. Compartilhe suas impressões sobre os livros e fique por dentro das novidades!</p>
-        </div>
+    <!-- HERDEIROS DO INFINITO -->
+    <section>
+      <h2>Herdeiros do Infinito</h2>
+      <div class="images-row">
+        <img src="https://i.postimg.cc/4mSMVDxc/herdeiros-do-infinito-capa.png" alt="Capa Herdeiros do Infinito">
+        <img src="https://i.postimg.cc/qtf5Z2nM/herdeiros-do-infinito-segunda-capa.png" alt="Segunda capa Herdeiros do Infinito">
+      </div>
+      <p>Nesta obra de ficção científica, terror e mistério, o autor Edmilson Pontes nos presenteia com um enredo surpreendente que nos leva a reflexões sobre a vida no universo, o medo do desconhecido e a incessante busca pela verdade. A trama central da história: "Os últimos sobreviventes de uma guerra nuclear que devastou o planeta Pronun, estão alojados numa estação subterrânea, a onde o suprimento de ar está preste a acabar, resta porém uma última esperança que é enviar o capitão Cromus e um grupo de apoio para um campo de energia chamado de Negravidom a onde poderá encontrar um portal para outros mundos e assim conhecer o criador do universo".</p>
+      <div class="links">
+        <a href="https://a.co/d/drZEE0d">Comprar na Amazon</a>
+      </div>
     </section>
 
-    <!-- Rodapé -->
-    <footer class="bg-gray-900 text-gray-300 py-8">
-        <div class="container mx-auto text-center">
-            <p>Edmílson Pontes</p>
-            <p class="text-sm font-light mt-1">Autor de ficção científica, romance e aventura</p>
-            <div class="flex justify-center space-x-4 mt-4 text-sm">
-                <a href="#sobre" class="hover:text-blue-400 transition-colors duration-200">Sobre</a>
-                <span>•</span>
-                <a href="#livros" class="hover:text-blue-400 transition-colors duration-200">Livros</a>
-                <span>•</span>
-                <a href="#contato" class="hover:text-blue-400 transition-colors duration-200">Contato</a>
-            </div>
-            <p class="mt-4 text-xs opacity-70">&copy; 2024 Edmílson Pontes. Todos os direitos reservados</p>
-        </div>
-    </footer>
+    <!-- HERDEIROS DO INFINITO 2 -->
+    <section>
+      <h2>Herdeiros do Infinito 2 — O Legado</h2>
+      <div class="images-row">
+        <img src="https://i.postimg.cc/q6BYx0Ks/herdeiros-do-infinito-2-capa.png" alt="Capa Herdeiros do Infinito 2">
+        <img src="https://i.postimg.cc/WtsQvmyd/herdeiros-do-infinito-2-segunda-capa.png" alt="Segunda capa Herdeiros do Infinito 2">
+      </div>
+      <p>O legado continua. Viva, filha do capitão Cromus e da engenharia genética Rosa, embarca em uma jornada épica para decifrar os enigmas de Vaniro Solón e salvar seus pais. Com seus irmãos adotivos, ela desbrava linhas temporais em uma busca que pode mudar o destino do universo. A cada passo, ela descobre mais sobre seu próprio legado e sobre o poder que a conexão com seu pai e sua mãe lhe conferem. Em meio a batalhas, traições e mistérios cósmicos, Viva deve proteger o legado de sua família enquanto forja seu próprio caminho como uma verdadeira heroína. Essa é uma jornada de auto descoberta, família e sacrifício.</p>
+      <div class="links">
+        <a href="https://a.co/d/jF49HkX">Comprar na Amazon</a>
+      </div>
+    </section>
 
+    <!-- HERDEIROS DO INFINITO 3 -->
+    <section>
+      <h2>Herdeiros do Infinito 3 — O Recomeço</h2>
+      <div class="images-row">
+        <img src="https://i.postimg.cc/V542LryD/herdeiros-do-infinito-3-capa.png" alt="Capa Herdeiros do Infinito 3">
+        <img src="https://i.postimg.cc/qzRStJ40/herdeiros-do-infinito-3-segunda-capa.png" alt="Segunda capa Herdeiros do Infinito 3">
+      </div>
+      <p>O legado de uma família se torna a única esperança para o universo. Cromus e sua filha, Viva, embarcam em uma perigosa missão para desvendar segredos ancestrais. Juntos, eles enfrentam o império tecnológico K-Rius, cujo avanço ameaça destruir tudo o que conhecem. Mas a missão de salvar o universo se torna uma jornada de autoconhecimento, revelando que a verdadeira força não reside na tecnologia, mas na capacidade de amar e perdoar. Com uma pitada de aventura e um toque de romance, o desfecho da trilogia "Herdeiros do Infinito" nos leva a uma reflexão sobre a vida, a morte e o poder de um verdadeiro recomeço.</p>
+      <div class="links">
+        <a href="https://a.co/d/fQ7j7oG">Comprar na Amazon</a>
+      </div>
+    </section>
+
+    <!-- A EMOÇÃO ESCURA -->
+    <section>
+      <h2>A Emoção Escura</h2>
+      <div class="images-row">
+        <img src="https://i.postimg.cc/qNNPFk5Q/a-emo-o-escura-capa.png" alt="Capa A Emoção Escura">
+        <img src="https://i.postimg.cc/67RD9Mwv/a-emocao-escura-segunda-capa.png" alt="Segunda capa A Emoção Escura">
+      </div>
+      <p>Num Brasil futurista, onde os ecos do passado ressoam no presente, Gilvano, um solitário assombrado por traumas, encontra em Marla um possível amor que desafia seus medos. Mas ela guarda um segredo obscuro, um reflexo de suas próprias feridas. Ao mesmo tempo, ele se torna cobaia de uma revolucionária máquina de regressão mental, capaz de desenterrar os fantasmas mais profundos. Entre a paixão extrema e os labirintos da memória, Gilvano precisará enfrentar seus demônios para descobrir a verdade: o passado pode ser a chave para o futuro, ou a porta para a destruição. Prepare-se para uma jornada onde a emoção e a ficção científica se encontram, e onde o coração e a mente travam uma batalha épica.</p>
+      <div class="links">
+        <a href="https://a.co/d/eyiWor6">Comprar na Amazon</a>
+      </div>
+    </section>
+
+    <!-- SONHO DE NAMORAR É JOGO MORTAL -->
+    <section>
+      <h2>Sonho de Namorar é Jogo Mortal</h2>
+      <div class="images-row">
+        <img src="https://i.postimg.cc/N20JrDhb/sonho-de-namorar-capa.png" alt="Capa Sonho de Namorar é Jogo Mortal">
+        <img src="https://i.postimg.cc/8J4X53Yj/sonho-de-namorar-segunda-capa.png" alt="Segunda capa Sonho de Namorar é Jogo Mortal">
+      </div>
+      <p>No sistema estelar de Antares 16, a liberdade tem um preço mortal. Subjugados e separados, os jovens do povo do norte são forçados a competir em corridas perigosas em um planeta deserto, governado com mãos de ferro pelo cruel povo do sul. Bel e Glória arriscam tudo, enfrentando criaturas ferozes e desafios inimagináveis, em busca da liberdade e do amor. Mas, no verão, quando os perigos se intensificam, a linha entre a esperança e a morte se torna tênue. Em um espetáculo mórbido para seus opressores, eles precisam vencer, não apenas para sobreviver, mas para recuperar sua humanidade. "Sonho de namorar é jogo mortal", uma história de opressão, resiliência e a busca por um futuro onde o amor e a liberdade se encontram.</p>
+      <div class="links">
+        <a href="https://a.co/d/dHF4m7i">Comprar na Amazon</a>
+      </div>
+    </section>
+
+    <!-- PROJETO RAÇA PURA -->
+    <section>
+      <h2>Projeto Raça Pura — O Retorno do Pesadelo</h2>
+      <div class="images-row">
+        <img src="https://i.postimg.cc/N9BPQYp3/projeto-ra-a-pura-capa.png" alt="Capa Projeto Raça Pura">
+        <img src="https://i.postimg.cc/HJQhGj40/projeto-raca-pura-segunda-capa.png" alt="Segunda capa Projeto Raça Pura">
+      </div>
+      <p>2177. A utopia de uma raça humana perfeita esconde um pesadelo: controle totalitário. Através de engenharia genética, a humanidade foi transformada, perdendo sua individualidade e tornando-se presa de uma força oculta. Mas uma pequena resistência surge, disposta a tudo para desmascarar a conspiração. Em uma jornada perigosa, eles desvendam segredos sombrios e encontram uma possível salvação nos confins do universo. Enfrentando dilemas morais e perigos extremos, esses rebeldes lutam pela liberdade da humanidade. Até onde eles irão para recuperar sua essência?</p>
+      <div class="links">
+        <a href="https://a.co/d/hWqM75V">Comprar na Amazon</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2025 Edmilson Pontes. Todos os direitos reservados.
+  </footer>
 </body>
 </html>
-
